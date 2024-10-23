@@ -332,6 +332,127 @@ p {
     max-width: 700px;
 }
 
+/* Featured Organizing Solutions Section (Organizing Section) */
+.lifestyle-articles {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .lifestyle-articles h3 {
+    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    transform: scale(1.05);
+    border: 2px solid #00647a;
+    border-radius: 20px;
+  }
+  
+  .carousel-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carousel-item h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .carousel-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .carousel {
+    scrollbar-width: none;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2); /* Light transparent background */
+    color: white; /* White arrow color */
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    border-radius: 0; /* No rounded corners */
+    height: auto; /* Remove fixed height */
+    width: auto; /* Remove fixed width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight darkening on hover */
+}
+
+.prev {
+    left: 0; /* Align the previous button to the extreme left */
+    padding-left: 10px; /* Add a little padding for spacing */
+}
+
+.next {
+    right: 0; /* Align the next button to the extreme right */
+    padding-right: 10px; /* Add a little padding for spacing */
+}
+
+.carousel-btn:before {
+    content: ''; /* This will add a small arrow before the button text */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.prev:before {
+    transform: rotate(135deg); /* Left arrow */
+}
+
+.next:before {
+    transform: rotate(-45deg); /* Right arrow */
+}
+
+
 #about {
     max-width: 2400px;
     display: flex;
@@ -411,8 +532,27 @@ p {
         width: 100%; /* Make full width */
     }
 }
+/* Gallery Section Styles within About */
+.gallery-images {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center align the images */
+    gap: 15px; /* Space between images */
+    margin-top: 20px; /* Space above the gallery */
+}
 
+.gallery-images img {
+    width: calc(33.33% - 10px); /* Responsive width for images (3 per row with gap) */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
 
+.gallery-images img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
 #values {
     display: flex;
     flex-direction: column;

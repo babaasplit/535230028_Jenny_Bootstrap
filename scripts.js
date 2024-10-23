@@ -2,6 +2,7 @@ function showSection(sectionId) {
     document.getElementById("home").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("contact").style.display = "none";
+    
     document.getElementById(sectionId).style.display = "block";
   }
 
@@ -41,4 +42,14 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
 })();
+
+// Function to show scroll carousel (Organizing section)
+function scrollCarousel(direction) {
+    const carousel = document.querySelector('.carousel');
+    const itemWidth = carousel.querySelector('.carousel-item').offsetWidth + 20;
+    carousel.scrollBy({
+        left: direction * itemWidth,
+        behavior: 'smooth'
+    });
+}
 
