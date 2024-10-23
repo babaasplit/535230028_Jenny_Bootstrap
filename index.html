@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Vibes</title>
+    <!-- Link to external stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <script src="scripts.js"></script>
+</head>
+<body onload="showSection('home')">
+    <!-- Navigation Bar -->
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Lifestyle Vibes</strong></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('about')">About</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#" role="button">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <main id="home" class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to the Lifestyle Hub</h2>
+                    <h3>Explore trends, wellness, and living your best life</h3>
+                </hgroup>
+
+                <p>
+                    Lifestyle is all about finding balance, embracing health, and living in the moment. 
+                    Whether you're into fitness, mindfulness, or just looking to elevate your daily routines, 
+                    you've come to the right place. Here at Lifestyle Hub, we aim to inspire you to adopt a lifestyle that not only 
+                    enhances your physical well-being but also nurtures your mental and emotional health. Our community is built around 
+                    sharing experiences, knowledge, and support to empower each other in this journey towards a fulfilling life.
+                </p>
+
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Wellness lifestyle image from Unsplash"
+                    />
+                    <figcaption>
+                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+                    </figcaption>
+                </figure>
+
+                <h3>Latest in Wellness</h3>
+                <p>
+                    Discover the latest trends in wellness, from meditation techniques to fitness tips that keep you grounded and healthy. 
+                    Our curated content provides you with valuable insights and practices that can easily be integrated into your daily life. 
+                    Whether you are a beginner looking to explore wellness for the first time or someone seasoned in self-care practices, 
+                    you will find resources that resonate with your personal journey towards health and well-being.
+                </p>
+
+                <figure>
+                    <img
+                        src="/images/01.jpg"
+                        alt="Wellness lifestyle image from Unsplash"
+                    />
+                    <figcaption>
+                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+                    </figcaption>
+                </figure>
+
+                <h3>Explore Fashion & Trends</h3>
+                <p>
+                    Stay ahead in fashion with insights into what's trending, sustainable fashion tips, and more. 
+                    Our platform not only highlights the latest styles but also emphasizes the importance of making mindful choices in fashion. 
+                    We believe that looking good should not come at the expense of the planet, and thus we promote brands and practices 
+                    that prioritize sustainability, helping you to look your best while making a positive impact on the environment.
+                </p>
+
+                <figure>
+                    <img
+                        src="/images/02.jpg"
+                        alt="Wellness lifestyle image from Unsplash"
+                    />
+                    <figcaption>
+                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+                    </figcaption>
+                </figure>
+
+            
+                <!-- New elements for Home Section -->
+                <h3>Healthy Recipes</h3>
+                <p>
+                    Explore our collection of healthy recipes that nourish the body and delight the palate. 
+                    Each recipe is crafted with care, incorporating fresh ingredients that provide essential nutrients 
+                    while satisfying your taste buds. We offer a variety of options, from quick and easy meals for busy days 
+                    to elaborate dishes for special occasions, ensuring that everyone can find something to enjoy and love.
+                </p>
+
+                <figure>
+                    <img
+                        src="/images/03.jpg"
+                        alt="Wellness lifestyle image from Unsplash"
+                    />
+                    <figcaption>
+                        <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <!-- Featured Articles Section -->
+        <section id="featured-articles">
+            <h2>Featured Articles</h2>
+            <div class="article-grid">
+                <article>
+                    <img src="images/healthier.jpg" alt="Article Image 1">
+                    <h3>10 Tips for a Healthier Lifestyle</h3>
+                    <p>Explore practical tips for improving your daily habits and embracing a healthier lifestyle.</p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article>
+                    <img src="images/mindfull.jpg" alt="Article Image 2">
+                    <h3>Mindfulness Practices for Busy People</h3>
+                    <p>Learn how to incorporate mindfulness into your routine, even with a hectic schedule.</p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article>
+                    <img src="images/fitness.jpg" alt="Article Image 3">
+                    <h3>The Best Fitness Routines for Beginners</h3>
+                    <p>Start your fitness journey with these beginner-friendly workout plans.</p>
+                    <a href="https://positivepsychology.com/mindfulness-exercises-techniques-activities/" target="_blank">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Popular Categories Section -->
+        <section id="popular-categories">
+            <h2>Popular Categories</h2>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <img src="images/fitness1.jpg" alt="Fitness Category" />
+                    <h3>Fitness</h3>
+                    <p>Stay fit with the latest fitness routines and health tips.</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/fashion.jpg" alt="Fashion Category" />
+                    <h3>Fashion</h3>
+                    <p>Discover the newest fashion trends and tips for sustainable style.</p>
+                </div>
+                <div class="category-item">
+                    <img src="images/wellness.jpg" alt="Wellness Category" />
+                    <h3>Wellness</h3>
+                    <p>Embrace wellness with meditation, mindfulness, and holistic practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Community Says</h2>
+            <blockquote>
+                "Lifestyle Vibes has completely transformed how I approach my daily routines. I feel healthier, more grounded, and energized!"
+                <cite>- Emily R.</cite>
+            </blockquote>
+            <blockquote>
+                "Their tips on mindfulness and wellness have been a game-changer for me. I now take time each day to focus on myself."
+                <cite>- John D.</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- About Section -->
+    <main id="about" class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>About Lifestyle Vibes</h2>
+                    <h3>Our Story & Vision</h3>
+                </hgroup>
+                
+                <p>
+                    Lifestyle Vibes was created with a simple goal: to help people live better, healthier, and more fulfilling lives. 
+                    We believe that true happiness comes from balance, mindfulness, and a deep connection to the world around us. 
+                    Our journey began with a few passionate individuals who envisioned a community where wellness and lifestyle converge. 
+                    Through engaging content, workshops, and events, we aim to inspire a more conscious way of living. 
+                    Every article and resource we offer reflects our commitment to fostering positive change and well-being. 
+                    Join us as we explore the beauty of a balanced lifestyle together.
+                </p>
+                
+                <div class="about-img">
+                    <img src="images/Nature.jpg" alt="Nature and lifestyle image" />
+                </div>
+
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to inspire and empower individuals to live consciously and make choices that enhance their quality of life. 
+                    We cover various aspects of life, including wellness, fitness, fashion, and mindfulness, to help our audience elevate their everyday experiences. 
+                    By providing practical tips and insightful content, we guide our community towards a more fulfilling lifestyle. 
+                    We believe that small, intentional changes can lead to significant transformations in one's life. 
+                    Our resources are designed to be relatable and actionable, encouraging everyone to embark on their unique wellness journey. 
+                    Together, we can cultivate a community that supports and uplifts one another in our pursuit of a vibrant life.
+                </p>
+
+                <div class="about-img">
+                    <img src="images/mission.jpg" alt="Wellness and fitness lifestyle image" />
+                </div>
+
+                <h3>Meet the Team</h3>
+                <p>
+                    Our team consists of wellness enthusiasts, fitness experts, and lifestyle gurus who bring diverse perspectives to the table. 
+                    Each member is dedicated to sharing their knowledge and experiences to help you navigate your wellness journey. 
+                    With backgrounds ranging from nutrition and fitness coaching to holistic healing, we combine our expertise to provide valuable insights. 
+                    We're committed to staying current with the latest trends and research in wellness to ensure our community receives the best guidance. 
+                    Our collaborative approach allows us to create a supportive environment where everyone can thrive. 
+                    We invite you to get to know us better and join us in making healthy living enjoyable and accessible for all.
+                </p>
+
+                <div class="about-img">
+                    <img src="images/team.jpg" alt="Team collaboration image" />
+                </div>
+
+                <h3>Our Values</h3>
+                <p>
+                    We value authenticity, inclusivity, and sustainability in everything we do, as these principles are foundational to our mission. 
+                    Our commitment to authenticity means we share real stories and experiences, encouraging our community to do the same. 
+                    Inclusivity is at the heart of our community; we believe everyone deserves a space where they feel welcome and valued. 
+                    Sustainability drives our decisions, guiding us towards practices that respect both people and the planet. 
+                    By living our values, we aim to create a supportive environment where everyone feels empowered to contribute. 
+                    Together, we can build a community that embraces diversity and promotes wellness for all.
+                </p>
+
+                <div class="about-img">
+                    <img src="images/values.jpg" alt="Sustainability image" />
+                </div>
+
+                <h3>Join Our Community</h3>
+                <p>
+                    Connect with us to share your journey and be a part of our vibrant community of like-minded individuals. 
+                    We believe that community is essential to personal growth, and together, we can inspire and uplift one another. 
+                    By following us on social media, participating in our events, and engaging with others, you can expand your network of support. 
+                    Whether you're seeking motivation, resources, or simply a place to connect, Lifestyle Vibes is here for you. 
+                    We encourage open dialogue and collaboration, allowing everyone to contribute their unique perspectives. 
+                    Join us today and discover the power of community in your wellness journey.
+                </p>
+
+                <div class="about-img">
+                    <img src="images/community.jpg" alt="Community engagement image" />
+                </div>
+
+                <h3>Why Choose Us?</h3>
+                <p>
+                    We understand that the path to a fulfilling life is unique for everyone, which is why we strive to cater to diverse needs. 
+                    Our resources range from insightful articles and in-depth guides to interactive workshops, all tailored to help you succeed. 
+                    At Lifestyle Vibes, we’re committed to being your trusted partner on this journey, offering guidance every step of the way. 
+                    We emphasize practical advice that can be easily integrated into your daily routine, promoting sustainable change. 
+                    Our community is built on trust, support, and a shared desire for growth, ensuring you’re never alone on your journey. 
+                    Let us empower you to make informed choices that align with your values and aspirations.
+                </p>
+
+                <div class="about-img">
+                    <img src="images/why.jpg" alt="Diverse resources image" />
+                </div>
+
+                <h3>Get Inspired</h3>
+                <p>
+                    Explore our blog for tips, stories, and insights that inspire you to live authentically and embrace life’s adventures. 
+                    We curate content that resonates with your values and dreams, encouraging you to cultivate a lifestyle that reflects your true self. 
+                    From practical advice to inspiring stories, our blog is a treasure trove of resources designed to uplift and motivate you. 
+                    We believe that inspiration can be found in everyday moments and share how you can incorporate that into your life. 
+                    Join us in discovering the beauty of living authentically and pursuing your passions wholeheartedly. 
+                    Let’s cultivate a lifestyle that empowers you to chase your dreams and embrace new experiences.
+                </p>
+                
+                <div class="about-img">
+                    <img src="images/inspired.jpg" alt="Inspiration and creativity image" />
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Contact Section -->
+    <main id="contact" class="container">
+        <section aria-label="Contact and Subscribe">
+            <div class="container">
+                <article>
+                    <hgroup>
+                        <h2>Get in Touch</h2>
+                        <h3>We'd love to hear from you!</h3>
+                    </hgroup>
+                    
+                    <form class="grid">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required/>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" aria-label="Last Name" required/>
+                        <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                        <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                        <button type="submit" onclick="event.preventDefault()">Send Message</button>
+                    </form>
+  
+                    <div class="contact-info">
+                        <h3>Our Location</h3>
+                        <p>621 Lifestyle Ave, Wellness City, USA</p>
+                        <p>Email: contact@lifestylevibes.com</p>
+                        <p>Phone: +1 (800) 123-4567</p>
+  
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+                            <a href="#" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+                            <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+
+                        <h3>Find Us on the Map</h3>
+                        <div style="width: 100%; height: 400px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=..." 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <form class="grid" id="contactForm">
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name" required />
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required />
+                            <input type="email" id="email" name="email" placeholder="Email" required />
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <button type="submit" onclick="handleSubmit(event)">Send Message</button>
+                        </form>
+
+                        <div id="formFeedback" style="display: none; color: green;">Thank you for your message! We'll get back to you soon.</div>
+                        <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+                            <img src="icons/whatsapp.png"/> Chat with us on WhatsApp
+                        </a>
+                        
+                </article>
+            </div>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Contact Us</h3>
+                <p>Email: lifestyle@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
