@@ -72,11 +72,13 @@ nav ul li a {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
+
 
 nav ul li a:hover {
     color: #1d3557;
+    transform: scale(1.05);
 }
 
 section {
@@ -157,12 +159,13 @@ section:hover {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .home-button:hover {
     background-color: #457b9d;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); /* Animasi zoom */
 }
 
 #featured-articles {
@@ -371,9 +374,10 @@ p {
   }
   
   .carousel-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); 
     border: 2px solid #00647a;
     border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   
   .carousel-image{
@@ -542,17 +546,36 @@ p {
 }
 
 .gallery-images img {
-    width: calc(33.33% - 10px); /* Responsive width for images (3 per row with gap) */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for images */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    width: calc(33.33% - 10px);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-images img:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.loader .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #457b9d;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 #values {
     display: flex;
     flex-direction: column;
@@ -602,15 +625,6 @@ p {
     text-align: center; /* Center text */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #1d3557; /* Dark blue background */
-    color: white; /* White text color */
-    padding: 2rem; /* Footer padding */
-    text-align: center; /* Centered text */
-    font-size: 1rem; /* Font size */
-    position: relative; /* Footer positioning */
-}
 
 
 /* Contact Section Styling */
@@ -773,72 +787,89 @@ button:hover {
 }
 
 footer {
-    background-color: #1d3557; /* Dark background for the footer */
-    color: #ffffff; /* White text for contrast */
-    padding: 3rem 0; /* Added padding for more space */
+    background-color: #6B767E; /* Warna latar belakang abu-abu gelap seperti di gambar */
+    color: #ffffff; /* Warna teks putih */
+    padding: 3rem 0; /* Padding lebih luas */
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Space out the sections */
+    justify-content: space-between; /* Atur jarak antara bagian-bagian footer */
     max-width: 1200px;
-    margin: 0 auto; /* Center the footer content */
-    padding: 1rem 2rem; /* Inner padding for sections */
-    align-items: center;
+    margin: 0 auto; /* Center the footer */
+    padding: 1rem 2rem; /* Padding bagian dalam */
+    align-items: flex-start;
 }
 
 .footer-links,
 .footer-info,
 .footer-social {
-    flex: 1; /* Allow equal width for all sections */
-    margin: 0 1rem; /* Space between sections */
+    flex: 1; /* Membagi area sama rata */
+    margin: 0 1rem; /* Jarak antar bagian */
 }
 
-.footer-links h3,
-.footer-info h3,
-.footer-social h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem; /* Headings size */
-    color: #ffffff; /* White for headings */
-}
-
-.footer-links ul {
+.footer-links ul,
+.footer-info ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-links ul li {
-    margin: 0.5rem 0; /* Spacing between links */
+.footer-links ul li,
+.footer-info ul li {
+    margin: 0.5rem 0; /* Spasi antar item */
 }
 
-.footer-links ul li a {
-    color: #a8dadc; /* Lighter color for links */
+.footer-links ul li a,
+.footer-info ul li a {
+    color: #C7C7C7; /* Warna link lebih terang */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-links ul li a:hover {
+.footer-links ul li a:hover,
+.footer-info ul li a:hover {
     text-decoration: underline;
-    color: #f1faee; /* Lighter color on hover */
+    color: #FFFFFF; /* Warna lebih terang saat hover */
 }
 
 .footer-social .social-icons {
     display: flex;
-    gap: 1rem; /* Space between social icons */
-    justify-content: center; /* Center the icons */
+    gap: 1.5rem; /* Jarak antara ikon sosial */
 }
 
 .footer-social .social-icons a img {
-    width: 30px; /* Icon size */
-    height: 30px;
+    width: 25px; /* Ukuran ikon */
+    height: 25px;
 }
 
 .footer-bottom {
-    text-align: center; /* Center the copyright text */
-    margin-top: 2rem; /* Spacing above */
-    font-size: 0.9rem; /* Smaller text */
-    color: #ffffff; /* White for contrast */
+    text-align: center; /* Tengah untuk teks bawah */
+    margin-top: 2rem; /* Spasi atas */
+    font-size: 0.9rem; /* Ukuran teks lebih kecil */
+    color: #FFFFFF; /* Warna teks putih */
 }
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-right: 1rem; /* Spasi antara logo dan teks */
+}
+
+.footer-logo h3 {
+    font-size: 2rem; /* Ukuran lebih besar untuk logo teks */
+    color: #ffffff; /* Warna putih */
+}
+
+.footer-quote {
+    font-style: italic; /* Teks kutipan miring */
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
 
 
 /* Responsive Design */
