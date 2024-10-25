@@ -53,3 +53,36 @@ function scrollCarousel(direction) {
     });
 }
 
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+    reveals.forEach(reveal => {
+        const rect = reveal.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            reveal.classList.add('active');
+        }
+    });
+});
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const carousel = document.querySelector('.testi-carousel');
+
+let currentIndex = 0;
+
+prev.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+});
+
+next.addEventListener('click', () => {
+    if (currentIndex < carousel.children.length - 1) {
+        currentIndex++;
+        updateCarousel();
+    }
+});
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 300}px)`;
+}
